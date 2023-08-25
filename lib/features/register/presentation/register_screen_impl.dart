@@ -12,14 +12,14 @@ class RegisterScreenImpl extends StatefulWidget {
 
 class _RegisterScreenImplState extends State<RegisterScreenImpl> {
   bool visibility= true;
+  TextEditingController userNameController= new TextEditingController();
+  TextEditingController emailController= new TextEditingController();
+  TextEditingController passwordController= new TextEditingController();
 
-  bool clicked=false;
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController userNameController= new TextEditingController();
-    TextEditingController emailController= new TextEditingController();
-    TextEditingController passwordController= new TextEditingController();
+
     RegisterRepoImp registerRepoImp=RegisterRepoImp();
     return Scaffold(
       backgroundColor: Colors.white,

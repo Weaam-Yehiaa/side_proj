@@ -11,11 +11,11 @@ class LoginScreenImpl extends StatefulWidget {
 
 class _LoginScreenImplState extends State<LoginScreenImpl> {
   bool visibility= true;
-
+  TextEditingController emailController= new TextEditingController();
+  TextEditingController passwordController= new TextEditingController();
   @override
   Widget build(BuildContext context) {
-    TextEditingController emailController= new TextEditingController();
-    TextEditingController passwordController= new TextEditingController();
+
     LoginRepoImp loginRepoImp=LoginRepoImp();
     return Scaffold(
       backgroundColor: Colors.white,
